@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="static/css/style.css">
+        <!-- Responsive-->
+        <link rel="stylesheet" href="static/css/responsive.css">
+        <!-- fevicon -->
+        <link rel="icon" href="static/images/fevicon.png" type="image/gif" />
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="static/css/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="static/css/adicionais.css">
+        <!-- Tweaks for older IEs-->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <!-- owl stylesheets --> 
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+        <link rel="stylesoeet" href="static/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    </head>
+
+    <body>
+
+        <style>
+            @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+            body{
+                background-color: #fafafa;
+            }
+
+        </style>
+
+        <div class="sticky-top">
+            <li><img src="static/images/logoo.png" class="padding_right_10" width="60" ><a>Anonimous Face</a></li>
+        </div>
+
+        <h4 class="express_text">Transcrição</h4>
+
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="static\deepfacelab\workspace\traducao.txt"></iframe>
+        </div>
+
+        <form>
+            <input class="fixed-bottom" type="button" value="Imprimir" onClick="window.print()"/>
+        </form>
+
+    </body>
+</html>

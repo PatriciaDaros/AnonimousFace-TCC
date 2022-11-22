@@ -1,0 +1,219 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="static/css/style.css">
+        <!-- Responsive-->
+        <link rel="stylesheet" href="static/css/responsive.css">
+        <!-- fevicon -->
+        <link rel="icon" href="static/images/fevicon.png" type="image/gif" />
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="static/css/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="static/css/adicionais.css">
+        <!-- Tweaks for older IEs-->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <!-- owl stylesheets --> 
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+        <link rel="stylesoeet" href="static/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">    
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        
+    </head>
+
+    <style>
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+      body{
+        background-color: #fafafa;
+    }
+    </style>
+
+
+    <body>
+      <nav class="navbar navbar-dark bg-dark">            
+        <div class="contact_menu">
+            <ul> 	fas fa-info
+                <li><img class="padding_right_7" width="65px"><a href="{% url 'index' %}" ><i class='fas fa-home' style='font-size:20px'></i>&nbsp Home</a ></li>
+                <li><img class="padding_right_7" width="65px"><a href="{% url 'sobre' %}"> <i class='fas fa-info' style='font-size:20px'></i>&nbsp Sobre</a></li>
+                <li><img class="padding_right_7" width="65px"><a href="{% url 'down' %}"> <i class='fas fa-download' style='font-size:20px'></i>&nbsp Downloads</a></li>
+            </ul>
+        </div>   
+    </nav>
+
+    <div class="banner_section layout_padding">
+        <div class="container">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                
+                              <div class="container">
+                                <h1 class="services_taital"><span style="color: #0c426e">Observações importantes</span></h1>
+                                <div class="choose_section_2 layout_padding">
+                                   <div class="row">
+                                      <div class="col-md-4">
+                                         <div class="choose_box">
+                                            <div class="number_1">
+                                               <h4 class="number_text">01</h4>
+                                               <h4 class="trusted_text">Funcionamento</h4>
+                                            </div>
+                                            <p class="dummy_text"> Para que a troca de rostos seja realizada é necessário clicar nos botões um a um, na ordem indicada. </p>
+                                         </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                         <div class="choose_box">
+                                            <div class="number_1">
+                                               <h4 class="number_text">02</h4>
+                                               <h4 class="trusted_text">Inserir o arquivo</h4>
+                                            </div>
+                                            <p class="dummy_text"> Para inserir o depoimetno basta clicar no botão indicado, caso o espaço para inserção do arquivo não abra, minimize a janela do navegador.</p>
+                                         </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                         <div class="choose_box">
+                                            <div class="number_1">
+                                               <h4 class="number_text">03</h4>
+                                               <h4 class="trusted_text">Terminal</h4>
+                                            </div>
+                                            <p class="dummy_text">Todos os botões relacionados a troca do rosto gera um terminal, para realizar o troca apenas selecione a tecla "enter" nas alternativas e deixe que a rede faça todo o resto por você. Ao aparecer a mensagem Done precione uma tecla e feche o terminal. </p>
+                                         </div>
+                                      </div>
+
+                                      <div class="col-md-4">
+                                        
+                                        <div class="choose_box">
+                                          <div class="number_1">
+                                             <h4 class="number_text">04</h4>
+                                             <h4 class="trusted_text">Merge</h4>
+                                          </div>
+                                          <p class="dummy_text"> Ao abrir o terminal siga o procedimento padrão, uma nova janela será instanciada, nesta janela é possivel ver diversos dos comandos que podem ser usados. Porém é possivel realizar o precedimento de uma forma mais automática, precione as teclas "shift" e a tecla com o sinal maior e aguarde o fim do procedimento. </p>
+                                       </div>
+
+                                     </div>
+                                     <div class="col-md-4">
+                                        <div class="choose_box">
+                                           <div class="number_1">
+                                              <h4 class="number_text">05</h4>
+                                              <h4 class="trusted_text">Gerar ATA</h4>
+                                           </div>
+                                           <p class="dummy_text"> O botão "gerar ata" permite a geração dos arquivos de saida do processo, ao clicar nele os arquivos são gerados e se torna possivel baixar o PDF do que foi dito no depoimento, porém tome cuidados, é necessária a revisão dos textos e em casos de pausas muito grandes o arquivo poderá ficar incompleto. O download dos arquivos deverá ser feito na aba Downloads.</p>
+                                        </div>
+                                     </div>
+                                     <div class="col-md-4">
+                                        <div class="choose_box">
+                                           <div class="number_1">
+                                              <h4 class="number_text">06</h4>
+                                              <h4 class="trusted_text">Audio</h4>
+                                           </div>
+                                           <p class="dummy_text">Até o momento a transformação do audio não é gerada, por tanto a aplicação disponibiliza o arquivo com o audio e a página onde pode-se converter para uma voz irreconhecivel. Após o processo envie o audio no botão 09 e a aplicação fará o resto. </p>
+                                        </div>
+                                     </div>
+                                     <div class="col-md-4">
+                                      <div class="choose_box">
+                                        <div class="number_1">
+                                           <h4 class="number_text">07</h4>
+                                           <h4 class="trusted_text">Treinamento</h4>
+                                        </div>
+                                        <p class="dummy_text"> Quanto mais tempo a rede passar treinando melhor ficará o resultado final do vídeo.</p>
+                                     </div>
+
+                                   </div>
+                                   <div class="col-md-4">
+                                      <div class="choose_box">
+                                         <div class="number_1">
+                                            <h4 class="number_text">08</h4>
+                                            <h4 class="trusted_text">Limpar</h4>
+                                         </div>
+                                         <p class="dummy_text"> Para gerar novos vídeos limpe o workspace com o botão 9.</p>
+                                      </div>
+                                   </div>
+                                   <div class="col-md-4">
+                                      <div class="choose_box">
+                                         <div class="number_1">
+                                            <h4 class="number_text">09</h4>
+                                            <h4 class="trusted_text">Dúvidas</h4>
+                                         </div>
+                                         <p class="dummy_text">Caso tenha qualquer duvida ou dificuldade entre em contato com o desenvolvedor!</p>
+                                      </div>
+                                   </div>
+                                 </div>
+                                
+
+                                   </div>
+                                </div>
+                             </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-center text-white fixed-bottom height-7">
+      <div class="container p-4 mx-auto my-auto align-items-center text-center" >
+          <section class="col-mb-4"> 
+              <a class="btn btn-outline-light btn-floating col-1" href="https://www.instagram.com/patriciar_daros/" target = "_black" role="button"><i class="fab fa-instagram" style='font-size:20px'></i> 
+              <a class="btn btn-outline-light btn-floating col-1" href="https://www.linkedin.com/in/patricia-regina-dar%C3%B3s-60089017a/" target = "_black" role="button"><i class="fab fa-linkedin-in" style='font-size:20px'></i></a>
+              <a class="btn btn-outline-light btn-floating col-1"  href="https://github.com/PatriciaDaros" target = "_black" role="button" ><i class="fab fa-github" style='font-size:20px'></i></a>
+          </section>
+      </div>
+    </footer>
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript --> 
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(".fancybox").fancybox({
+            openEffect: "none",
+            closeEffect: "none"
+            });
+            
+            $(".zoom").hover(function(){
+            
+            $(this).addClass('transition');
+            }, function(){
+            
+            $(this).removeClass('transition');
+            });
+            });
+            
+      </script> 
+      
+      <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+      </script>   
+   </body>
+</html>
